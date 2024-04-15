@@ -1,0 +1,437 @@
+/* Generales */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2 {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #356336 !important;
+}
+
+h3,
+h4,
+h5 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 10px !important;
+    color: #356336 !important;
+}
+
+p {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #345734;
+    line-height: 1.2rem;
+}
+
+section {
+    margin: 50px 50px;
+}
+
+input,
+select {
+    padding: 4px 15px;
+}
+
+a {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none !important;
+    color: #356336 !important;
+}
+
+a:hover {
+    background-color: #cde9ce;
+}
+
+ul {
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+li {
+    list-style: none;
+}
+
+i{
+    padding: 16px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Nav Menu */
+.navmenu {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #356336;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    fill: #fff;
+}
+
+.navmenu #a_Logo{
+    padding: 0;
+    margin: 0;
+    margin-left: 30px;
+    margin-right: 20px;
+    border: none;
+    background-color: transparent;
+}
+
+.navmenu a {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 500;
+    color: #356336 !important;
+    padding: 8px 12px;
+    border-radius: 50px;
+    background-color: beige;
+}
+
+.navmenu a:hover {
+    background-color: rgb(231, 231, 181);
+}
+
+.menu-links {
+    list-style: none;
+}
+
+.menu-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu-links li:last-child {
+    margin-right: 30px;
+}
+
+/* Hero Section */
+
+.hero {
+    height: 400px;
+    background-image: url(/img/hero_recetas2.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero div {
+    width: 50%;
+    margin-top: 200px;
+    margin-left: 50px;
+
+}
+
+.hero p {
+    display: block;
+    background-image: none;
+    height: auto;
+    width: 80%;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 2rem;
+    color: #356336 !important;
+}
+
+.hero button {
+    display: block;
+    padding: 8px 12px;
+    margin-top: 50px;
+    background-color: #ff2759;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 50px;
+    border: none;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+}
+
+.hero button:hover {
+    background-color: #e71848;
+}
+
+/* Seccion Recetas Populares */
+
+#populares {
+    display: flex;
+}
+
+.stars {
+    margin-bottom: 16px;
+}
+
+.card1 {
+    /* border: 1px solid red; */
+    border-radius: 8px;
+    background-color: #fff;
+    width: 25%;
+    margin: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card-img-top {
+    border-radius: 8px !important;
+}
+
+.card-body1 {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+/* .card-body1 a {
+    margin-left: 75%;
+} */
+
+.card-body1 a:hover {
+    color: #252925 !important;
+}
+
+/* Seccion Calculadora*/
+
+.container-Calculadora {
+    /* border: 1px solid green; */
+    background-color: #fcf5ef;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.icon-calculadora {
+    color: #ff2759;
+    cursor: pointer;
+}
+
+.icon-calculadora:hover {
+    color: #c52147;
+}
+
+.cont-calculadora {
+    /* border: 1px solid blue; */
+    border-radius: 8px;
+    margin: auto;
+    padding: 30px 40px;
+    background-color: #A6CF98;
+
+}
+
+.btn1 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    border-radius: 12px;
+    padding: 8px 32px;
+    border: 0;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: #ff2759;
+    color: white;
+    border: 0;
+}
+
+.btn-primary:hover {
+    background-color: #c52147;
+}
+
+
+.cont-calculadora .ul1 {
+    padding: 20px 50px !important;
+    /* border: 1px solid rgb(236, 14, 159); */
+    background-color: #f9f6f3;
+    border-radius: 8px;
+}
+
+.li-cal {
+    align-items: center;
+    margin-top: 20px;
+}
+
+.p-calculadora {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.col-calculadora-opciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#act-fisica {
+    margin-left: 50px;
+}
+
+#resultado {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px 50px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: none;
+    margin-top: 20px;
+}
+
+/* Seccion Lista Recetas*/
+
+.container-List {
+    /* border: 1px solid green; */
+    background-color: #fcf5ef;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-container {
+    width: 80%;
+    margin: auto;
+}
+
+.card-container-recetas {
+    width: 100%;
+    padding: 30px 50px;
+    margin: auto;
+}
+
+#lista-recetas {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+}
+
+#lista-recetas .none {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    display: none;
+}
+
+#tit_recetas{
+    display: none;
+}
+
+/* Detail Recipe */
+
+#detalle{
+    width: 60%;
+    margin: auto;
+    padding-bottom: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#detalle h1{
+    margin-left: 30px;
+    padding-top: 20px;
+}
+
+#detalle img{
+    width: 100%;
+}
+
+.div-agregar-favoritos{
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.div-agregar-favoritos p{
+    color: #c52147;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+#detalle i{
+    cursor: pointer;
+    color: #345734;
+    margin-left: 20px;
+}
+
+#detalle i:hover{
+    color: red;
+}
+
+#detalle a{
+    margin-top: 50px;
+}
+
+.txt_detail{
+    margin: 20px 30px 0px 30px;
+}
+
+/* Carrito*/
+
+#carrito{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 80px;
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 1;
+    width: 50%;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 16px;
+}
+/* 
+#lista-carrito {
+    width: 50%;
+} */
+
+#lista-carrito thead{
+    height: 40px;
+}
+
+#lista-carrito th{
+    padding-left: 20px;
+}
+
+#lista-carrito td{
+    border-top: 1px solid rgb(117, 117, 117) ;
+}
+
+#lista-carrito td:first-child{
+    width: 35%;
+}
+
+#lista-carrito td img{
+    width: 100%;
+    border-radius: 16px;
+}
+
+#cart-description{
+    padding: 20px;
+}
+
+
